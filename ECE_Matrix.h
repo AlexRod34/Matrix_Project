@@ -37,38 +37,32 @@ public:
 
 	//operator assignments
 	// Add two ECE_Matricies
-    ECE_Matrix operator+(ECE_Matrix const &) const; 
-    // Add a ECE_matrix and a double
-    ECE_Matrix operator+(double const &) const; 
-    // Add a double and a ECE_Matrix
-    friend ECE_Matrix operator+(double const&, ECE_Matrix const &);
-    // Subtract two ECE_Matricies
-    ECE_Matrix operator-(ECE_Matrix const &) const; 
-    // Subtract a ECE_matrix and a double
-    ECE_Matrix operator-(double const &) const; 
-    // Subtract a double and a ECE_Matrix
-    friend ECE_Matrix operator-(double const&, ECE_Matrix const &);
-    // Multiply a ECE_matrix and a double
-    ECE_Matrix operator*(double const &) const; 
-    // Multiply a double and a ECE_Matrix
-    friend ECE_Matrix operator*(double const&, ECE_Matrix const &);
-    // Take the transpose of a matrix
-    ECE_Matrix transpose()const;
-    // Divide a ECE_matrix and a double
-    ECE_Matrix operator/(double const &) const; 
+    	ECE_Matrix operator+(ECE_Matrix const &) const; 
+    	// Add a ECE_matrix and a double
+    	ECE_Matrix operator+(double const &) const; 
+    	// Add a double and a ECE_Matrix
+    	friend ECE_Matrix operator+(double const&, ECE_Matrix const &);
+    	// Subtract two ECE_Matricies
+    	ECE_Matrix operator-(ECE_Matrix const &) const; 
+    	// Subtract a ECE_matrix and a double
+    	ECE_Matrix operator-(double const &) const; 
+    	// Subtract a double and a ECE_Matrix
+    	friend ECE_Matrix operator-(double const&, ECE_Matrix const &);
+    	// Multiply a ECE_matrix and a double
+    	ECE_Matrix operator*(double const &) const; 
+    	// Multiply a double and a ECE_Matrix
+    	friend ECE_Matrix operator*(double const&, ECE_Matrix const &);
+    	// Take the transpose of a matrix
+    	ECE_Matrix transpose()const;
+    	// Divide a ECE_matrix and a double
+    	ECE_Matrix operator/(double const &) const; 
 
-    //Addition assignment 
-    ECE_Matrix& operator+=(ECE_Matrix const &); 
-    //Subtraction assignment 
-    ECE_Matrix& operator-=(ECE_Matrix const &); 
+    	//Addition assignment 
+    	ECE_Matrix& operator+=(ECE_Matrix const &); 
+    	//Subtraction assignment 
+    	ECE_Matrix& operator-=(ECE_Matrix const &); 
 
-
-
-
-	
-
-
-    // printing operator for displaying matrices neatly
+    	// printing operator for displaying matrices neatly
 	friend ostream& operator<<(ostream& os, const ECE_Matrix& m);	
 };
 
